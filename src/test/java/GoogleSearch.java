@@ -16,8 +16,8 @@ public class GoogleSearch extends Locators {
 		WebDriver driver = new ChromeDriver();
 		
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-		driver.get("https://www.google.com/");
 		driver.manage().window().maximize();
+		driver.get("https://www.google.com/");
 		driver.findElement(By.xpath(googleSearchBox)).sendKeys("youtube");
 		driver.findElement(By.xpath(googleSearchBox)).sendKeys(Keys.ENTER);
 		
