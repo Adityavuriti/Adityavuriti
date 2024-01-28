@@ -14,6 +14,7 @@ public class Annotation {
   }
   @BeforeMethod
   public void beforeMethod() {
+    system.out.print("Yes");
   }
 
   @AfterMethod
